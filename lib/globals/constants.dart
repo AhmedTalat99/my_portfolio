@@ -7,4 +7,8 @@ class Constants {
       width: width,
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9198ac0 (Initial commit)

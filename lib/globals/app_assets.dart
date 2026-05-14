@@ -13,4 +13,8 @@ class AppAssets {
   static String work1 = 'assets/images/work1.jpg';
   static String work2 = 'assets/images/work2.jpg';
   static String share = 'assets/images/share.png';
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9198ac0 (Initial commit)

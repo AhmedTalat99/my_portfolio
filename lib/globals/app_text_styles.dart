@@ -44,4 +44,8 @@ class AppTextStyles {
     return GoogleFonts.comfortaa(
         fontSize: 18, fontWeight: FontWeight.w800, color: Colors.grey);
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9198ac0 (Initial commit)

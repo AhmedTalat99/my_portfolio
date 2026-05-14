@@ -8,4 +8,8 @@ class AppColors {
   static Color bgColor2 = const Color(0xff00416A);
   static Color robinEdgeBlue = const Color(0xff00CCCC);
   static Color white = const Color(0xffffffff);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9198ac0 (Initial commit)

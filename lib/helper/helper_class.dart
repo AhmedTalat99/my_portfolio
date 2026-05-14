@@ -35,7 +35,11 @@ class HelperClass extends StatelessWidget {
             alignment: Alignment.center,
             color: bgColor,
             padding: EdgeInsets.symmetric(
+<<<<<<< HEAD
                 vertical: size.height * 0.18, horizontal: paddingWidth),
+=======
+                vertical: size.height * 0.18, horizontal:  paddingWidth),
+>>>>>>> 9198ac0 (Initial commit)
             child: tablet,
           );
         } else {
@@ -44,11 +48,19 @@ class HelperClass extends StatelessWidget {
             alignment: Alignment.center,
             color: bgColor,
             padding: EdgeInsets.symmetric(
+<<<<<<< HEAD
                 vertical: size.height * 0.18, horizontal: paddingWidth),
+=======
+                vertical: size.height * 0.18, horizontal:paddingWidth ),
+>>>>>>> 9198ac0 (Initial commit)
             child: desktop,
           );
         }
       },
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9198ac0 (Initial commit)

@@ -133,8 +133,13 @@ class _ContactUsState extends State<ContactUs> {
     final smtpServer = gmail(username, password);
 
     final message = Message()
+<<<<<<< HEAD
       ..from = Address(username)
       ..recipients.add(username)
+=======
+      ..from = Address(username) // my email
+      ..recipients.add(username) // my email
+>>>>>>> 9198ac0 (Initial commit)
       ..subject = subject
       ..text =
           'Name: $name\nEmail: $email\nPhone: $phone\nMessage:\n$messageContent';
@@ -267,4 +272,8 @@ class _ContactUsState extends State<ContactUs> {
         contentPadding:
             const EdgeInsets.symmetric(horizontal: 24, vertical: 16));
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9198ac0 (Initial commit)
