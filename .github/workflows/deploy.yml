@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
@@ -31,12 +31,6 @@ jobs:
           ls -la build/web/index.html || echo "index.html not found"
 
       - name: Deploy to GitHub Pages
-        uses: actions/upload-artifact@v3
-        with:
-          name: build
-          path: build/web
-
-      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
