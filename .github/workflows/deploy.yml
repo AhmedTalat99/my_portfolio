@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+
 permissions:
   contents: write
 
@@ -17,7 +18,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          channel: 'stable'
+          channel: stable
           cache: true
 
       - name: Get dependencies
@@ -26,19 +27,9 @@ jobs:
       - name: Build web
         run: flutter build web --release --base-href "/my_portfolio/"
 
-      - name: Verify build
-        run: ls -la build/web/index.html
-
       - name: Deploy to GitHub Pages
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          mkdir -p deploy-temp
-          cp -r build/web/* deploy-temp/
-          cd deploy-temp
-          git init
-          git config user.name "GitHub Actions Bot"
-          git config user.email "bot@github.com"
-          git add .
-          git commit -m "Deploy from GitHub Actions"
-          git push --force "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/web
+          force_orphan: true
