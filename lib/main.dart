@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: PageStorage(// preserves the state of widgets when they are destroyed and rebuilt, especially in cases like navigation, tabs, or scrolling.
-        bucket: bucket, // → stores the saved states
+        bucket: bucket, // → stores the saved states.
         child: const MainDashBoard(),
       ),
     );
