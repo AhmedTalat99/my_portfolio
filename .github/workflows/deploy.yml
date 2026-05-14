@@ -28,11 +28,15 @@ jobs:
         run: ls -la build/web/index.html
 
       - name: Deploy to GitHub Pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cd build/web
+          mkdir -p deploy-temp
+          cp -r build/web/* deploy-temp/
+          cd deploy-temp
           git init
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions Bot"
+          git config user.email "bot@github.com"
           git add .
-          git commit -m "Deploy: $(date)"
-          git push --force https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:gh-pages
+          git commit -m "Deploy from GitHub Actions"
+          git push --force "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:gh-pages
