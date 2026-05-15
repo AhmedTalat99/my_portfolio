@@ -181,8 +181,4 @@ class _MainDashBoardState extends State<MainDashBoard> {
       ),
     );
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 9198ac0 (Initial commit)

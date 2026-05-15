@@ -9,8 +9,4 @@ class Project {
     required this.image,
     required this.link,
   });
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 9198ac0 (Initial commit)

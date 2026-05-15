@@ -27,10 +27,6 @@ class _MyServicesState extends State<MyServices> {
     final Size size = MediaQuery.of(context).size;
     return HelperClass(
       mobile: Column(
-<<<<<<< HEAD
-=======
-        // mainAxisSize: MainAxisSize.min,
->>>>>>> 9198ac0 (Initial commit)
         children: [
           buildMyServicesText(),
           Constants.sizedBox(height: 60.0),
@@ -264,8 +260,4 @@ class _MyServicesState extends State<MyServices> {
       ),
     );
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 9198ac0 (Initial commit)

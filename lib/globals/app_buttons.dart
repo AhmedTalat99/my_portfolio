@@ -25,8 +25,4 @@ class AppButtons {
       ),
     );
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 9198ac0 (Initial commit)

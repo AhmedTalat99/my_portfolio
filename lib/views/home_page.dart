@@ -123,18 +123,12 @@ class _HomePageState extends State<HomePage> {
                 return InkWell(
                   onTap: () {
                     if (socialBI == 0) {
-<<<<<<< HEAD
-=======
                       // LinkedIn
->>>>>>> 9198ac0 (Initial commit)
                       launchLink('https://shorturl.at/I7S1u');
                     } else if (socialBI == 1) {
                       launchLink('https://github.com/AhmedTalat99');
                     } else if (socialBI == 2) {
-<<<<<<< HEAD
-=======
                       // whatsApp
->>>>>>> 9198ac0 (Initial commit)
                       launchLink('https://wa.me/201142488571');
                     }
                   },
@@ -178,73 +172,25 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-<<<<<<< HEAD
-  Future<void> contactWhatsApp() async {
-=======
    Future<void> contactWhatsApp() async {
->>>>>>> 9198ac0 (Initial commit)
     const String whatsAppUrl = 'whatsapp://send?phone=+201142488571';
 
     if (await canLaunchUrl(Uri.parse(whatsAppUrl))) {
       await launchUrl(Uri.parse(whatsAppUrl), webOnlyWindowName: '_blank');
     } else {
-<<<<<<< HEAD
-=======
       // Handle error: WhatsApp not installed or URL can't be launched
->>>>>>> 9198ac0 (Initial commit)
       print("Could not launch WhatsApp");
     }
   }
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 9198ac0 (Initial commit)
   Future<void> requestPermission() async {
     if (await Permission.storage.request().isGranted) {
       // Permission granted
     }
   }
 
-<<<<<<< HEAD
-  Future<void> downloadCV() async {
-    final Dio dio = Dio();
-    const url = 'https://shortlink.uk/1uRSF';
-
-    try {
-      if (kIsWeb) {
-        if (await canLaunchUrl(Uri.parse(url))) {
-          await launchUrl(Uri.parse(url));
-        } else {
-          throw 'Could not launch $url';
-        }
-      } else if (io.Platform.isAndroid || io.Platform.isIOS) {
-        if (io.Platform.isAndroid) {
-          await requestPermission();
-        }
-
-        final directory = await getApplicationDocumentsDirectory();
-        final filePath = '${directory.path}/cv.pdf';
-
-        await dio.download(
-          url,
-          filePath,
-        );
-
-        if (kDebugMode) {
-          print('Downloaded to $filePath');
-        }
-      } else {
-        throw 'Unsupported platform';
-      }
-    } catch (e) {
-      if (kDebugMode) {
-        print('Error: $e');
-      }
-    }
-  }
-=======
 
 
   Future<void> downloadCV() async {
@@ -288,7 +234,6 @@ class _HomePageState extends State<HomePage> {
     }
   }
 }
->>>>>>> 9198ac0 (Initial commit)
 
   Ink buildSocialButton({required String asset, required bool hover}) {
     return Ink(
@@ -305,15 +250,7 @@ class _HomePageState extends State<HomePage> {
         width: 10,
         height: 12,
         color: hover ? AppColors.bgColor : AppColors.themeColor,
-<<<<<<< HEAD
       ),
     );
   }
 }
-=======
-        // fit: BoxFit.fill,
-      ),
-    );
-  }
-}
->>>>>>> 9198ac0 (Initial commit)

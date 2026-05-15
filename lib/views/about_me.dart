@@ -98,8 +98,4 @@ class AboutMe extends StatelessWidget {
       ],
     );
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 9198ac0 (Initial commit)

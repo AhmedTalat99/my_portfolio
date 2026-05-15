@@ -53,11 +53,7 @@ Collaborated within a multidisciplinary team to develop a medical clinic applica
 Developed a media streaming Flutter application with audio playback and offline local storage using Hive. Implemented Provider state management and optimized application performance to ensure a smooth and responsive user experience.
 ''',
     image: 'assets/images/onshoda.png',
-<<<<<<< HEAD
     link: 'https://github.com/AhmedTalat99/onshoda.git',
-=======
-    link: 'https://github.com/AhmedTalat99/onshoda.git',//
->>>>>>> 9198ac0 (Initial commit)
 
   ),
 
@@ -70,17 +66,6 @@ Developed a responsive cross-platform Flutter dashboard supporting mobile, table
     link: 'https://github.com/AhmedTalat99/responsive_dash_board.git',
   ),
 ];
-<<<<<<< HEAD
-=======
-/*   List images = <String>[
-    AppAssets.work1,
-    AppAssets.work2,
-    AppAssets.work1,
-    AppAssets.work2,
-    AppAssets.work1,
-    AppAssets.work2,
-  ]; */
->>>>>>> 9198ac0 (Initial commit)
 
   var hoveredIndex;
 
@@ -129,10 +114,6 @@ Developed a responsive cross-platform Flutter dashboard supporting mobile, table
         crossAxisSpacing: 24,
       ),
       itemBuilder: (context, index) {
-<<<<<<< HEAD
-=======
-        // var image = images[index];
->>>>>>> 9198ac0 (Initial commit)
         return FadeInUpBig(
           duration: const Duration(milliseconds: 1600),
           child: InkWell(
@@ -237,8 +218,4 @@ Developed a responsive cross-platform Flutter dashboard supporting mobile, table
       ),
     );
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 9198ac0 (Initial commit)

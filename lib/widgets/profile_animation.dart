@@ -35,18 +35,8 @@ class _ProfileAnimationState extends State<ProfileAnimation>
           AppAssets.profile2,
           height: 450,
           width: 400,
-<<<<<<< HEAD
-=======
-          /*  width: MediaQuery.of(context).size.width * .7,
-          height: MediaQuery.of(context).size.height * .5,
-        */
->>>>>>> 9198ac0 (Initial commit)
         ),
       ),
     );
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 9198ac0 (Initial commit)

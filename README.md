@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # My Portfolio
 
 A Flutter web portfolio website showcasing my projects and experience as a Flutter developer.
@@ -32,8 +31,3 @@ flutter run -d chrome  # or web platform
 ## Author
 
 Ahmed Talat - Flutter Developer
-=======
-# my_portfolio
-
-A new Flutter project.
->>>>>>> 9198ac0 (Initial commit)

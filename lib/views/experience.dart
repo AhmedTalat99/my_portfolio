@@ -66,18 +66,10 @@ final List<ExperienceModel> experiences = [
 Widget buildTimelineItem(ExperienceModel exp, int index) {
   final bool isLast = index == experiences.length - 1;
 
-<<<<<<< HEAD
   return IntrinsicHeight(
     child: Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-=======
-  return IntrinsicHeight(   // ← fixes the line height to match card height
-    child: Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        // Timeline line
->>>>>>> 9198ac0 (Initial commit)
         Column(
           children: [
             Container(
@@ -89,11 +81,7 @@ Widget buildTimelineItem(ExperienceModel exp, int index) {
               ),
             ),
             if (!isLast)
-<<<<<<< HEAD
               Expanded(
-=======
-              Expanded(          // ← stretches to card height, not fixed 100
->>>>>>> 9198ac0 (Initial commit)
                 child: Container(
                   width: 2,
                   color: Colors.blue,
@@ -104,10 +92,6 @@ Widget buildTimelineItem(ExperienceModel exp, int index) {
 
         const SizedBox(width: 20),
 
-<<<<<<< HEAD
-=======
-        // Card
->>>>>>> 9198ac0 (Initial commit)
         Expanded(
           child: Container(
             margin: const EdgeInsets.only(bottom: 30),
